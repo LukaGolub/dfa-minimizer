@@ -90,6 +90,4 @@ The minimized automaton is printed in the same structure as the input:
 - **State merging** processes equivalent pairs from highest index to lowest, redirecting every transition that pointed to the higher-indexed state so it points to its equivalent lower-indexed partner, then removing the now-redundant state (updating the start state's identity if it happens to be the one removed).
 - This implementation assumes the input DFA is already fully specified (every state has a transition for every alphabet symbol); it doesn't add or handle an implicit "dead" trap state for missing transitions.
 
-## License
 
-Feel free to use, modify, and distribute this project. Consider adding an explicit license file (e.g. MIT) if you plan to share it publicly.
